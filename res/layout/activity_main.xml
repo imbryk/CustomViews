@@ -1,0 +1,51 @@
+<com.imbryk.view.BottomDrawer xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imbryk="http://schemas.android.com/apk/res/com.imbryk.demo"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    imbryk:drag_handle="@+id/drawer_handle"
+    imbryk:obscure_color="@color/black_semi_transparent"
+    imbryk:overscroll_color="#cccccc"
+    imbryk:toggle_button="@+id/drawer_toggle"
+    tools:context=".MainActivity" >
+
+    <ListView
+            android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/drawer_handle"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#cccccc" >
+
+            <Button
+                android:id="@+id/drawer_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true"
+                android:text="toggle" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                android:text="button" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#aaaaaa" >
+        </LinearLayout>
+    </LinearLayout>
+
+</com.imbryk.view.BottomDrawer>

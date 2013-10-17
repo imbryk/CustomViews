@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="toggle_button" format="reference" />
+    <attr name="state_collapsed" format="boolean" />
+
+    <declare-styleable name="BottomDrawer">
+        
+        <!-- view which will toggle the expaded/collapsed state -->
+        <attr name="toggle_button" />
+        
+        <attr name="drag_handle" format="reference" />
+        
+        <attr name="overscroll_friction" format="float" />
+        
+        <attr name="obscure_color" format="color" />
+        
+        <attr name="overscroll_color" format="color" />
+        
+        <attr name="initial_state" format="enum">
+            <enum name="collapsed" value="1" />
+            <enum name="expanded" value="2" />
+            <enum name="hidden" value="3" />
+        </attr>
+        
+    </declare-styleable>
+    
+    
+    <declare-styleable name="TextWithLinksContainer">
+        <attr name="selected_color" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="CollapsableLayout">
+        
+        <!-- if set to true the whole view will capture toggle clicks -->
+        <attr name="android:clickable" />
+        
+        <!-- view which will toggle the collapsed state -->
+        <attr name="toggle_button" />
+        
+        <!-- the proposed height of the view in collapsed state -->
+        <attr name="collapsed_height" format="dimension" />
+        
+        <!-- if set to true (default) the collapsed_height will by reduced -->
+        <!-- when a line in any TextView is partially hidden -->
+        <attr name="align_to_lines" format="boolean" />
+        
+        <!-- duration of the collapse/expand animation - default is 500ms -->
+        <attr name="animations_duration" format="integer" />
+        
+    </declare-styleable>
+
+    <declare-styleable name="CollapsableLayout_Layout">
+        <!-- decides if the child is a header (TOP), footer(BOTTOM) or content - only one content can be declared -->
+        <attr name="android:layout_gravity" />
+        
+        <!-- if true header/footer will not be hidden if content is too small to make layout  collapsable - default is false-->
+        <attr name="always_visible" format="boolean" />
+    </declare-styleable>
+</resources>
