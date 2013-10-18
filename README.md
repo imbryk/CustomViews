@@ -3,6 +3,8 @@ CustomViews
 
 Demo project containing my custom view components and sample usage.
 
+This project requires android-support-v7-appcompat library and 
+[volley](https://android.googlesource.com/platform/frameworks/volley)
 
 License
 =======
