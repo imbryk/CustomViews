@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:imbryk="http://schemas.android.com/apk/res/com.imbryk.demo">
+
+    <item 
+        imbryk:state_collapsed="true" 
+        android:color="@color/links_blue"/>
+    <item 
+        imbryk:state_collapsed="false" 
+        android:color="#00000000"/>
+
+</selector>

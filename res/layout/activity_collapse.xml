@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imbryk="http://schemas.android.com/apk/res/com.imbryk.demo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_light"
+    android:clipToPadding="false"
+    android:fillViewport="true"
+    android:padding="16dp"
+    android:scrollbarStyle="outsideOverlay" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:padding="8dp"
+            android:text="Lorem Ipsum"
+            android:textStyle="bold" />
+
+        <com.imbryk.view.CollapsableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_card"
+            android:clickable="true"
+            android:padding="16dp"
+            imbryk:align_to_lines="true"
+            imbryk:collapsed_height="150dp"
+            imbryk:toggle_button="@+id/title_1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/collapsable_chevron"
+                android:duplicateParentState="true"
+                android:gravity="center"
+                android:text="more"
+                android:textColor="@color/collapsable_color" />
+
+            <com.imbryk.text.TextWithLinksContainer
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                imbryk:selected_color="@color/links_selection_blue" >
+
+                <TextView
+                    android:id="@+id/collapse_text_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorLink="@color/links_blue" />
+            </com.imbryk.text.TextWithLinksContainer>
+        </com.imbryk.view.CollapsableLayout>
+
+        <com.imbryk.view.CollapsableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_card"
+            android:clickable="true"
+            android:padding="16dp"
+            imbryk:align_to_lines="true"
+            imbryk:collapsed_height="200dp"
+            imbryk:toggle_button="@+id/toggle" >
+
+            <Button
+                android:id="@+id/toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:background="@drawable/selector"
+                android:padding="4dp"
+                android:text="toggle here" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/collapsable_chevron"
+                android:duplicateParentState="true"
+                android:gravity="center"
+                android:text="more"
+                android:textColor="@color/collapsable_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/collapse_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/collapse_text_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ipsum" />
+            </LinearLayout>
+        </com.imbryk.view.CollapsableLayout>
+
+        <com.imbryk.view.CollapsableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_card"
+            android:clickable="true"
+            android:padding="16dp"
+            imbryk:align_to_lines="true"
+            imbryk:collapsed_height="200dp">
+
+            <TextView
+                android:id="@+id/collapse_text_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.imbryk.view.CollapsableLayout>
+    </LinearLayout>
+
+</ScrollView>

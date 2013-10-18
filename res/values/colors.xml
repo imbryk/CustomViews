@@ -2,4 +2,6 @@
 <resources>
     <color name="black_semi_transparent">#88000000</color>
     <color name="gray_light">#eeeeee</color>
+    <color name="links_blue">#009ed9</color>
+    <color name="links_selection_blue">#88009ed9</color>
 </resources>

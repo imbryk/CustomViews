@@ -2,31 +2,27 @@
 <resources>
 
     <string name="app_name">CustomViewsDemo</string>
-    <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
-    
-    <string-array name="items">
-        <item>Item0</item>
-        <item>Item1</item>
-        <item>Item2</item>
-        <item>Item3</item>
-        <item>Item4</item>
-        <item>Item5</item>
-        <item>Item6</item>
-        <item>Item7</item>
-        <item>Item8</item>
-        <item>Item9</item>
-        <item>Item10</item>
-        <item>Item11</item>
-        <item>Item12</item>
-        <item>Item13</item>
-        <item>Item14</item>
-        <item>Item15</item>
-        <item>Item16</item>
-        <item>Item17</item>
-        <item>Item18</item>
-        <item>Item19</item>
-        
-    </string-array>
-
+	<string name="ipsum_with_links"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+	     <a href="http://www.lipsum.com/">Ut enim ad minim veniam</a>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+	     Duis aute irure dolor in <a href="http://www.lipsum.com/">reprehenderit in voluptate</a> velit esse cillum dolore eu fugiat nulla pariatur.
+	     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	     Sed ut perspiciatis unde omnis <a href="http://www.lipsum.com/">iste natus error sit voluptatem</a> accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+	     Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.]]></string>
+	
+	<string name="ipsum"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+	     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+	     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+	     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+	     Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.]]></string>
+	
+	<string-array name="ipsum_array">
+		<item>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</item>
+		<item>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</item>
+		<item>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</item>
+		<item>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</item>
+		<item>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</item>
+		<item>Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</item>
+		<item>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</item>
+	</string-array>
 </resources>

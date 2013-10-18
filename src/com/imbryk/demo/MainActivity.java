@@ -1,5 +1,6 @@
 package com.imbryk.demo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
@@ -34,7 +35,7 @@ public class MainActivity extends ActionBarActivity {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
-				
+				startActivity(new Intent(MainActivity.this, CollapseActivity.class));
 			}
 		});
 		listview.setOnScrollListener(new OnScrollListener() {

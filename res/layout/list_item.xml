@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     android:orientation="horizontal"
-    android:background="@drawable/bg_card"
+    android:background="@drawable/bg_card_normal"
      >
     <com.android.volley.toolbox.NetworkImageView 
         android:id="@+id/list_item_image"
