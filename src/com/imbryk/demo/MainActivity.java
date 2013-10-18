@@ -1,15 +1,14 @@
 package com.imbryk.demo;
 
 import android.os.Bundle;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.AbsListView;
 import android.widget.AbsListView.OnScrollListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import com.imbryk.view.BottomDrawer;
 
@@ -48,5 +47,8 @@ public class MainActivity extends ActionBarActivity {
 				layout.onScroll(view, firstVisibleItem, visibleItemCount, totalItemCount);
 			}
 		});
+		
+		ViewPager pager = (ViewPager)findViewById(R.id.pager);
+		pager.setAdapter(new DemoPagerAdapter(this));
 	}
 }

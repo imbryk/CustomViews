@@ -13,7 +13,7 @@ public class DemoListAdapter extends BaseAdapter {
 	
 	private int mCnt = 20;
 	private String mImgUrlString = "http://placekitten.com/";
-	private LayoutInflater mInflater;
+	private final LayoutInflater mInflater;
 	public DemoListAdapter( Context context) {
 		mInflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 	}

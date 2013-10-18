@@ -7,7 +7,7 @@
     android:background="@color/gray_light"
     imbryk:drag_handle="@+id/drawer_handle"
     imbryk:obscure_color="@color/black_semi_transparent"
-    imbryk:overscroll_color="#cccccc"
+    imbryk:overscroll_color="@color/black_semi_transparent"
     imbryk:toggle_button="@+id/drawer_toggle"
     tools:context=".MainActivity" >
 
@@ -60,6 +60,7 @@
             android:background="#aaaaaa" >
 
             <com.imbryk.viewPager.LoopViewPager
+                android:id="@+id/pager"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
         </LinearLayout>

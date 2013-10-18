@@ -42,7 +42,7 @@ import android.util.AttributeSet;
  */
 public class LoopViewPager extends ViewPager {
 
-    private static final boolean DEFAULT_BOUNDARY_CASHING = false;
+    private static final boolean DEFAULT_BOUNDARY_CASHING = true;
 
     OnPageChangeListener mOuterPageChangeListener;
     private LoopPagerAdapterWrapper mAdapter;
