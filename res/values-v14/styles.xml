@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="MyTheme.Styled" parent="@style/MyTheme.Base">
+        <item name="android:actionBarStyle">@style/Widget.Styled.ActionBar</item>
+    </style>
+
+    <style name="Widget.Styled.ActionBar" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="android:background">@drawable/bg_action_bar</item>
+    </style>
+
+</resources>

@@ -1,15 +1,19 @@
 package com.imbryk.demo;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.view.View;
 import android.widget.AbsListView;
 import android.widget.AbsListView.OnScrollListener;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.imbryk.view.BottomDrawer;
 
-public class MainActivity extends Activity {
+public class MainActivity extends ActionBarActivity {
 
 
 	@Override
@@ -23,11 +27,17 @@ public class MainActivity extends Activity {
 		final BottomDrawer layout = (BottomDrawer)findViewById(R.id.drawer_layout);
 		
 		
-		
-		String[] items = getResources().getStringArray(R.array.items);
-		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items);
+		DemoListAdapter adapter = new DemoListAdapter( this );
 		ListView listview = (ListView)findViewById(R.id.list);
 		listview.setAdapter(adapter);
+		listview.setOnItemClickListener(new OnItemClickListener() {
+
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view,
+					int position, long id) {
+				
+			}
+		});
 		listview.setOnScrollListener(new OnScrollListener() {
 			@Override
 			public void onScrollStateChanged(AbsListView view, int scrollState) {

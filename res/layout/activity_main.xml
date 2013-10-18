@@ -4,6 +4,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/gray_light"
     imbryk:drag_handle="@+id/drawer_handle"
     imbryk:obscure_color="@color/black_semi_transparent"
     imbryk:overscroll_color="#cccccc"
@@ -11,9 +12,16 @@
     tools:context=".MainActivity" >
 
     <ListView
-            android:id="@+id/list"
+        android:id="@+id/list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:divider="@null"
+        android:dividerHeight="8dp"
+        android:drawSelectorOnTop="true"
+        android:listSelector="@drawable/list_selector"
+        android:padding="16dp"
+        android:scrollbarStyle="outsideOverlay" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,27 +32,36 @@
             android:id="@+id/drawer_handle"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:background="#cccccc" >
+            android:background="@drawable/bg_bottom_drawer" >
 
             <Button
                 android:id="@+id/drawer_toggle"
                 android:layout_width="wrap_content"
-                android:layout_height="48dp"
+                android:layout_height="match_parent"
                 android:layout_alignParentLeft="true"
+                android:background="@drawable/selector"
+                android:drawableLeft="@drawable/ic_drag_indicator"
+                android:padding="8dp"
                 android:text="toggle" />
 
             <Button
                 android:id="@+id/button"
                 android:layout_width="wrap_content"
-                android:layout_height="48dp"
+                android:layout_height="match_parent"
                 android:layout_alignParentRight="true"
+                android:background="@drawable/selector"
+                android:padding="8dp"
                 android:text="button" />
         </RelativeLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="300dp"
             android:background="#aaaaaa" >
+
+            <com.imbryk.viewPager.LoopViewPager
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
         </LinearLayout>
     </LinearLayout>
 
